@@ -1,0 +1,339 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0596a4b009226964a810aa8842024ccb, type: 3}
+  m_Name: CodeMonkeyInteractiveSO
+  m_EditorClassIdentifier: 
+  currentVersion: 1.02
+  quizStateList:
+  - quizSO: {fileID: 11400000, guid: 8a4a2ce9c84cf3d4bb8c199ec431b15f, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5c47f5a931f347649b3142228157034e, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: bb11e20a63de6984d9dfa46a6ddcf8c6, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: a1fbc28205f58844883212b8150afb4a, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 1ce3f0a699add804caecd4ffecee603d, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: bb4788e697fb89e45b4733101d70c5bc, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5195aa9538a85d74a8affe1333f3a076, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d5ad36959f8266d41bd7c896f019459b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 18e97c5b5af681c4f933752891d32999, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e0ffef157dc895149be129d797919442, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 78f9716463bce464ea5a2307908d3bc9, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e7b964cfc7a4602478f162ebc9e0b99f, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: eb865525015ae284fb766eebb153d1a0, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 0acc7ea0d7067234ab438731784dba7f, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c627069645d914a489b8f9221d19ca66, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 8cc80a3f9cfe5014ca564ae5694d767d, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 641ba3b0399e20f4596410ad4dfdacd6, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 1b6e7db034ca3854e9ad1703cd0d8ec3, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: fa6156e66b347904db48586cf894bb91, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2af3d9928ed6d954bbf2a3f10613bffd, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 514acdce131fb4e4b86c8786a615be6b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 09a2e7dfbfb28f7478b56c693ee92916, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c90b26d20a97269499589ae268149f66, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 13ac3b64e1af1974b9faabc0f53a596c, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 3b75d0b28542ff14589ded3673492ed8, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 21a1cd7f8dbd2a14994a9b9551a495ef, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d919d989686224e46960eb7429271795, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 19985f10dd5006a4984a28a5775b7692, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 8c9dd4f881789af4db20515f77f97300, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c8c32338fc7ef3748a1e3cdc4102936f, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 659cefda90e979b4697455e750ccfd47, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: caa7070156d0d304ba8b47f14b9d52ee, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: f76309dcc4d1fd24d87088ae94fda9bd, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: b978202b8192dd746bef535c231d2518, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 52ec98ec73bf6034f846bb0cf50cf93a, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 0c386eeca22099b4a8a59d3c6ea407bf, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 4b16f47aef86f47468949bc6db95d263, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 1a9058a7d1bdf5143823fbcf930d89a2, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 8929f629b76c929418ac7de1b87832a3, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 4cfbdb9f2c3388242a9cc7f47a99bd05, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e8071020965c5e745b7fc016e3c45369, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 1405553f2d728fb418258c0c3686f385, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: da1caaff162ed93439b848bc7efcf3d8, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 9d46b426bb8853542a96f9c5815543cb, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 9056e4329635c5c4aa985c9c51ba3307, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 852174e4e7a139647ba9ad14bc39030a, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 76017ed0c68c9a44c9b7ab69359f3881, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 28dd347b877dccc4d8d030b1781f57ae, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: fd013a2599eaa214b9a6a99335d4602b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 18d510a02fbae4f4ba5d84c2127ff741, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 772838deb7259fa4db7972de04e25966, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 4ad01cc31490ff44d84d3a840a1d02cb, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ae6267cdc2f320945bb6356665431344, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 49cf4066f08d3154f8f0722c15259517, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d07b4a9c0ae08ba43aa036cd7e348017, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 94911b0f157a5b447832f0fd5c1c64a3, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: dd0f8deb902da3f4689eed076dd87120, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: f823d2dbbe3d3424bab4bc7dfbfe7ce8, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: cf1a2fe7703f1a84aa5a57d5b6b4fbfb, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d4c1bef01f8156e4c86db21f50d7a702, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5113bad2d988a484ca73c4d1c765bea7, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c9bf1e18b95bfe948acd6ac015efbd3d, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 7a6e07fa693bb4f4cb5bce4d1b9dae60, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 8c008bd5ee2fee640a8190385913c721, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 494c867c6fc016c44bf75febc01efb11, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 31e3b059fbd6a894db360d094f286204, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: f23f26236b81d024da1c5ef37535bf0e, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 69f013dc83d7b2748a514950565b06ac, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: f5db408ee21663d48b3976c130063a85, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: cdaf322fff879974f8c7b25ab9131f72, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 6c94ecd6cdb08374ab3fe58f8c527b61, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: b32d049c4f743844e85860c506f367c0, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 7ac65a1709745ac45a1c5faa62d1c199, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ebd0a14a35f889e43b8af4f112e76e97, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 69cc510a32b52344c8bbd437f784c556, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 57f4154536d9f334e9a1205beb5b2208, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: b4b036a6c8d479c4b9afab51d15d30c9, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ad075db3e494733449c7e88ca76d6733, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 16940a92438f0cf4faf4189b5b725008, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ae017e2e52001fa4ca128e43eb31b155, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e88c45baf9c3ede4e9cf598bc849eca1, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: b275e18a4f87d7943bf50a72febca019, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 1b84b8a61fdc530448527a950de464f7, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2f106bb95c1ba714a822f8aaa5b9e3e2, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 938d6371954f7c24da45363e0ea20e03, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c0d375a3a0bee054bbac9bbfadaa7fd9, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 59a7ba833938ce4449dec738b02be40b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 55a8c3ee0b02c1342b82a46ac24873c0, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 540df4898c17a7f45a349e32f78fa82e, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 96339c88b191a764c8c22bbd7e7670d1, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 987ec04848f76ba4a81a3807afc92fab, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e34647f068382bb4a8c01a7e95cc2904, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 72f057088ba809843b9d729d9702fb20, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 6889b018d39a06544939f547f4f9cf00, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2c6b5d2cba8431f4da89414a19ceb85c, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 36e031bbf25e0b0488363048b9fc61f2, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ef728b0c5bb6dbf49986cccf208c8605, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 8fd1e4031c888d24a9c3ac4962251b30, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: f7889a982a1d3144782abd7cae51515a, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2c224d04442cd374d805a2fd7474f97b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: efca08e4f33200c43bcbb5471f955635, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c9a804f822857fb46a80837a866fce4c, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 63b126c332cfe2c40892c5b62319ad92, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: a89bc972d9e78914a888c652a735597b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: f4586c21a0f40ea46a93115e90d53f47, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 8b43475563dd1da4a9712dbc2006087e, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: fa8570498f1d24f4f8e537b480532b3b, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d84a20671da379e4f8b04a957488b57f, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ab131d4a9dfa8e14795433cc1d400664, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5ab322ad60d215d4b811576bb9f0e5ca, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2bc94d925e93d2843aade81696a115c3, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 7de509e088d52b343b865396fd667aa6, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2f232428c9c11ea4fab0bafc74b04698, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c8df9a8b67b04384387d6372d5b0fca0, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 94bb421630590194d9328d6499b1bcf7, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 1fc356cc989fc144cb93339e9bb04d86, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5134cabe72beda24cb09726ab86374b8, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d8120602058ec3a42b50bb7bc5a5a228, type: 2}
+    state: 2
+  frequentlyAskedQuestionStateList: []
+  exerciseStateList: []
+  lectureListSO: {fileID: 11400000, guid: c1af4d7cadebe754fa5ac3880e0890f9, type: 2}
+  defaultScene: {fileID: 102900000, guid: bb81c32a07e112643ac0b41e5f2d830a, type: 3}
+  activeExerciseSO: {fileID: 0}
+  lastSelectedLectureSO: {fileID: 11400000, guid: 790c70be8e2ecba4ba9dd582fe90022b, type: 2}
+  checkedLastUpdateTimestamp: 1756061091
+  lastUpdateVersion: 1.02
+  lastQOTDResponse:
+    questionId: 214
+    questionText: 'What is the position of the transform after running this code?
+
+      <p>Vector3
+      targetPosition = new Vector3(10, 0, 0);</p>
+
+      <p>transform.position =
+      targetPosition;</p>
+
+      <p>targetPosition.x = 20;</p>'
+    answerA: (10, 0, 0)
+    answerB: (20, 0, 0)
+    answerC: Unknown
+    answerD: 
+    answerE: 
+  lastQotdTimestamp: 1756061091
+  websiteLatestMessage:
+    text: 'Hi there!
+
+      Thanks for picking up the course, I hope it helps you
+      a ton in your learning journey of making awesome 2D games!
+
+      I''m always
+      available in the course comments if you need help with anything.
+
+      - Code
+      Monkey
+
+
+      Join the <b>Private Discord</b> and <b>Weekly Private Livestreams</b>
+      where I''m there to answer any questions you have.<br><a href=''https://cmonkey.co/lualanderprivate''>https://cmonkey.co/lualanderprivate</a>'
+  websiteLatestMessageTimestamp: 1756061091
+  websiteDynamicMessage:
+    text: <u>Fresh Assets on Sale!</u>
+    url: https://cmonkey.co/unityassetstore
+  websiteDynamicMessageTimestamp: 1756061091
+  websiteLatestVideos:
+    videos:
+    - youTubeId: YCvh88Hg5m8
+      title: TOP 8 QUICK Tips on Game Programming!
+    - youTubeId: Lgmv7PYKka8
+      title: Does this AI FINALLY replace Game Devs? Should YOU worry?
+    - youTubeId: x4BTbeKinSI
+      title: TOP 10 FREE NEW Assets AUGUST 2025!
+    - youTubeId: HZ48JOAf-Ko
+      title: Did I STOP making TUTORIALS?
+  websiteLatestVideosTimestamp: 1756061091
+  lastChatAIQuestionAsked: 'following the exact reset button in the ui, I am getting
+    NullReferenceException: Do not create your own module instances, get them from
+    a ParticleSystem instance LanderVisuals.HandleThrusterParticles when the level
+    resets a '
+  lastChatAIQuestionAnswer: "The issue of a `NullReferenceException` in the `LanderVisuals.HandleThrusterParticles`
+    when resetting the level could be due to not properly resetting or referencing
+    the particle systems when the level is restarted. The course recommends several
+    best practices to handle such issues, including decoupling visual scripts from
+    logic scripts via events[SOURCE].\n\nHere are a few troubleshooting steps you
+    might consider:\n\n1. **Check Particle System References**: Ensure that all particle
+    system references in the `LanderVisuals` script are properly assigned. Inspect
+    the `SerializedField` attributes for the particle systems and verify they are
+    linked in the Unity Inspector[SOURCE].\n\n2. **Events for Particle Control**:
+    Make sure that the particle systems are controlled using events, as detailed
+    in the course. This way, when the input event is triggered, it correctly enables
+    or disables the particles[SOURCE][SOURCE].\n\n3. **Proper Reset During Level
+    Restart**: Ensure that when the level is reset, the particle systems are also
+    reset or stopped correctly. This might include disabling the particle systems
+    at the start or when the lander crashes and re-enabling them when the level is
+    initially loaded[SOURCE].\n\n4. **Checking Initialization**: Since the `NullReferenceException`
+    often involves attempting to use an object that hasn't been initialized, verify
+    that your particle systems are initialized properly during the startup sequence
+    of your game[SOURCE].\n\nIf these steps don\u2019t solve the issue, double-check
+    your event subscriptions and ensure that objects aren't getting destroyed between
+    loads without being properly recreated or re-referenced.\n\n[SOURCE]\nVideo Quote:
+    \"\"[SOURCE]\nVideo Quote: \"\"[SOURCE]\nVideo Quote: \"\"[SOURCE]\nVideo Quote:
+    \"\"[SOURCE]\nVideo Quote: \"\"[SOURCE]\nVideo Quote: \"\""
+  lastChatAIResponseAskSuccess:
+    code: 1
+    runId: run_5jNZA63NCTIyNNS5LTU4NGWW
+    threadId: thread_qopIpJlw5OgkWImbDLkA1eXt
