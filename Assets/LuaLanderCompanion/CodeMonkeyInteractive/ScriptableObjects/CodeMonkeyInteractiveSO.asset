@@ -250,6 +250,42 @@ MonoBehaviour:
     state: 2
   - quizSO: {fileID: 11400000, guid: d8120602058ec3a42b50bb7bc5a5a228, type: 2}
     state: 2
+  - quizSO: {fileID: 11400000, guid: 5afa4121225f4f54993120a2d480e1c8, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 190e3a4b7e0b2564fac6759ac4d39a35, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 81c25439a5b753647b300624161c37d2, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: c523d3c0995c9ab4f9481b9cb8d68b8a, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 7af2d3b4eb6be2140a7103934d7b4f64, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 7543d5939c4486e408b5383e749c9b29, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5381db85c85f71a46a1eee9a91f5a630, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d4264ee490e32304daadcb9a35deabf5, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 5339e290ed461404ab603a1e582f2db9, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2044143f85f233f43989e0708e9915fb, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 85e88b7dcdc7e5642b669b5ab5906bc3, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ca5e3732a977f1440bae160c93e6cafa, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e783c7df621a2ed4f949589eec776f12, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: ccb51a852e2da9a469a542ddc998e34c, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 2cc83024b3b0c804e95bc25ef8ea9c33, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 293633d6117ee0e4aba965d5bd8d9e91, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 6dea479d77178674a84672255a964ed6, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 203d8406a55efb247bddb0e08976160c, type: 2}
+    state: 2
   frequentlyAskedQuestionStateList: []
   exerciseStateList: []
   lectureListSO: {fileID: 11400000, guid: c1af4d7cadebe754fa5ac3880e0890f9, type: 2}
@@ -306,34 +342,25 @@ MonoBehaviour:
     - youTubeId: HZ48JOAf-Ko
       title: Did I STOP making TUTORIALS?
   websiteLatestVideosTimestamp: 1756061091
-  lastChatAIQuestionAsked: 'following the exact reset button in the ui, I am getting
-    NullReferenceException: Do not create your own module instances, get them from
-    a ParticleSystem instance LanderVisuals.HandleThrusterParticles when the level
-    resets a '
-  lastChatAIQuestionAnswer: "The issue of a `NullReferenceException` in the `LanderVisuals.HandleThrusterParticles`
-    when resetting the level could be due to not properly resetting or referencing
-    the particle systems when the level is restarted. The course recommends several
-    best practices to handle such issues, including decoupling visual scripts from
-    logic scripts via events[SOURCE].\n\nHere are a few troubleshooting steps you
-    might consider:\n\n1. **Check Particle System References**: Ensure that all particle
-    system references in the `LanderVisuals` script are properly assigned. Inspect
-    the `SerializedField` attributes for the particle systems and verify they are
-    linked in the Unity Inspector[SOURCE].\n\n2. **Events for Particle Control**:
-    Make sure that the particle systems are controlled using events, as detailed
-    in the course. This way, when the input event is triggered, it correctly enables
-    or disables the particles[SOURCE][SOURCE].\n\n3. **Proper Reset During Level
-    Restart**: Ensure that when the level is reset, the particle systems are also
-    reset or stopped correctly. This might include disabling the particle systems
-    at the start or when the lander crashes and re-enabling them when the level is
-    initially loaded[SOURCE].\n\n4. **Checking Initialization**: Since the `NullReferenceException`
-    often involves attempting to use an object that hasn't been initialized, verify
-    that your particle systems are initialized properly during the startup sequence
-    of your game[SOURCE].\n\nIf these steps don\u2019t solve the issue, double-check
-    your event subscriptions and ensure that objects aren't getting destroyed between
-    loads without being properly recreated or re-referenced.\n\n[SOURCE]\nVideo Quote:
-    \"\"[SOURCE]\nVideo Quote: \"\"[SOURCE]\nVideo Quote: \"\"[SOURCE]\nVideo Quote:
-    \"\"[SOURCE]\nVideo Quote: \"\"[SOURCE]\nVideo Quote: \"\""
+  lastChatAIQuestionAsked: 'Getting the following error: This will cause a leak and
+    performance issues, InputActions.Lander.Disable() has not been called.'
+  lastChatAIQuestionAnswer: "The error message \"This will cause a leak and performance
+    issues, InputActions.Lander.Disable() has not been called\" typically indicates
+    that the input actions are not being disabled when they should be. This is important
+    to prevent memory leaks and performance issues due to input actions staying active
+    unnecessarily.\n\nHere's how you can handle input actions to avoid this issue:\n\n1.
+    **Enable Input Actions:** Make sure you are enabling the input actions when you
+    need them using `inputActions.Enable();`.\n\n2. **Disable Input Actions:** Ensure
+    that you properly disable the input actions when they are no longer needed. This
+    is often done in the `OnDestroy` method:\n   ```csharp\n   private void OnDestroy()
+    {\n       inputActions.Disable();\n   }\n   ```\n\nIn the context of this course,
+    enabling and disabling the input actions are crucial parts when handling the
+    input system. This pattern is reinforced to avoid the exact error message you
+    are encountering[SOURCE].\n\nMake sure these lines are correctly implemented
+    in your script attached to the Lander or any other relevant game object. This
+    should resolve the error by ensuring that input actions are correctly managed.\n\n[SOURCE]\nVideo
+    Quote: \"\""
   lastChatAIResponseAskSuccess:
     code: 1
-    runId: run_5jNZA63NCTIyNNS5LTU4NGWW
-    threadId: thread_qopIpJlw5OgkWImbDLkA1eXt
+    runId: run_yH1wbYS7wANiuGBqQm0WOl3X
+    threadId: thread_xVZXWhRPCVDDTHF01dVHaKKv
