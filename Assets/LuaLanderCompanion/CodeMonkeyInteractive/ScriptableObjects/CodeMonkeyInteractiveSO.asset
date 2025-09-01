@@ -342,25 +342,53 @@ MonoBehaviour:
     - youTubeId: HZ48JOAf-Ko
       title: Did I STOP making TUTORIALS?
   websiteLatestVideosTimestamp: 1756061091
-  lastChatAIQuestionAsked: 'Getting the following error: This will cause a leak and
-    performance issues, InputActions.Lander.Disable() has not been called.'
-  lastChatAIQuestionAnswer: "The error message \"This will cause a leak and performance
-    issues, InputActions.Lander.Disable() has not been called\" typically indicates
-    that the input actions are not being disabled when they should be. This is important
-    to prevent memory leaks and performance issues due to input actions staying active
-    unnecessarily.\n\nHere's how you can handle input actions to avoid this issue:\n\n1.
-    **Enable Input Actions:** Make sure you are enabling the input actions when you
-    need them using `inputActions.Enable();`.\n\n2. **Disable Input Actions:** Ensure
-    that you properly disable the input actions when they are no longer needed. This
-    is often done in the `OnDestroy` method:\n   ```csharp\n   private void OnDestroy()
-    {\n       inputActions.Disable();\n   }\n   ```\n\nIn the context of this course,
-    enabling and disabling the input actions are crucial parts when handling the
-    input system. This pattern is reinforced to avoid the exact error message you
-    are encountering[SOURCE].\n\nMake sure these lines are correctly implemented
-    in your script attached to the Lander or any other relevant game object. This
-    should resolve the error by ensuring that input actions are correctly managed.\n\n[SOURCE]\nVideo
-    Quote: \"\""
+  lastChatAIQuestionAsked: SO I am already storing the music time in a static field
+    and it does resume from where it left off. The problem is that there is a brief
+    second where the music cuts off before resuming. Idk if this is how it is supposed
+    to be
+  lastChatAIQuestionAnswer: 'The brief pause or cut-off in your music when resuming
+    could be related to how the audio system handles starting and stopping. In Unity,
+    when you are updating and setting the music time using a static field as described
+    in the course, it should technically resume seamlessly from where it left off[SOURCE].
+    However, if there is a cut off, it might be due to a slight delay in re-initializing
+    the audio source or in setting the audio clip''s playback position.
+
+
+    Here
+    are a few things to consider:
+
+
+    1. **AudioSource Configuration**: Ensure
+    that your `AudioSource` is correctly configured for looping and that it''s set
+    to play on awake if needed. Sometimes small configuration issues can cause delays.
+
+
+    2.
+    **Script Optimizations**: Double-check your script to make sure the logic for
+    capturing the current time in the music and resuming is being executed as intended.
+    If there''s any additional logic right before switching scenes or states, it
+    might introduce a tiny delay.
+
+
+    3. **Performance**: If your game is experiencing
+    high load or performance hitches, it could be causing tiny stutters when the
+    audio is activated. Optimize the scene load times and check if the audio manager
+    or related systems are efficiently executed.
+
+
+    In the lectures, it''s indicated
+    that storing music time and resuming should work without interruption[SOURCE].
+    If issues persist, there could be a project-specific quirk. Try running the sound
+    separately to see if any audio settings might be causing this brief cut-off.
+
+
+    [SOURCE]
+
+    Video
+    Quote: ""[SOURCE]
+
+    Video Quote: ""'
   lastChatAIResponseAskSuccess:
     code: 1
-    runId: run_yH1wbYS7wANiuGBqQm0WOl3X
-    threadId: thread_xVZXWhRPCVDDTHF01dVHaKKv
+    runId: run_TKXCMagw3sgeLSxNxocVhY5p
+    threadId: thread_uPLXIW3kItiro6eU0qbIxVN7
