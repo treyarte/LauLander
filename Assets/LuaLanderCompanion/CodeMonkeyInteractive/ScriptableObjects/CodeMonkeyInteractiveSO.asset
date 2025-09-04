@@ -286,31 +286,50 @@ MonoBehaviour:
     state: 2
   - quizSO: {fileID: 11400000, guid: 203d8406a55efb247bddb0e08976160c, type: 2}
     state: 2
+  - quizSO: {fileID: 11400000, guid: 201156ae58e56a943aec1d7576e20b73, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: 38812954f292dba49b7b82a4366c11d8, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: e9b43e8294079fe43a42deadb354ba9f, type: 2}
+    state: 2
+  - quizSO: {fileID: 11400000, guid: d0601be7bb194104abfde4cb6da7e721, type: 2}
+    state: 2
   frequentlyAskedQuestionStateList: []
   exerciseStateList: []
   lectureListSO: {fileID: 11400000, guid: c1af4d7cadebe754fa5ac3880e0890f9, type: 2}
   defaultScene: {fileID: 102900000, guid: bb81c32a07e112643ac0b41e5f2d830a, type: 3}
   activeExerciseSO: {fileID: 0}
   lastSelectedLectureSO: {fileID: 11400000, guid: 790c70be8e2ecba4ba9dd582fe90022b, type: 2}
-  checkedLastUpdateTimestamp: 1756061091
-  lastUpdateVersion: 1.02
+  checkedLastUpdateTimestamp: 1756863067
+  lastUpdateVersion: 1.03
   lastQOTDResponse:
-    questionId: 214
-    questionText: 'What is the position of the transform after running this code?
+    questionId: 217
+    questionText: 'When would this code cause an error?
 
-      <p>Vector3
-      targetPosition = new Vector3(10, 0, 0);</p>
+      <p>Building closest
+      = null;</p>
 
-      <p>transform.position =
-      targetPosition;</p>
+      <p>for (int i = 0; i < instanceList.Count; i++) {</p>
 
-      <p>targetPosition.x = 20;</p>'
-    answerA: (10, 0, 0)
-    answerB: (20, 0, 0)
-    answerC: Unknown
+      <p>&nbsp;
+      &nbsp; if (Vector3.Distance(position, instanceList[i].GetPosition()) < Vector3.Distance(position,
+      closest.GetPosition())) {</p>
+
+      <p>&nbsp; &nbsp; &nbsp; &nbsp; closest
+      = instanceList[i];</p>
+
+      <p>&nbsp; &nbsp; }</p>
+
+      <p>}</p>
+
+      <p>return
+      closest;</p>'
+    answerA: When instanceList is empty
+    answerB: When instanceList has at least one element
+    answerC: When instanceList has exactly two elements
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1756061091
+  lastQotdTimestamp: 1756863067
   websiteLatestMessage:
     text: 'Hi there!
 
@@ -326,22 +345,22 @@ MonoBehaviour:
 
       Join the <b>Private Discord</b> and <b>Weekly Private Livestreams</b>
       where I''m there to answer any questions you have.<br><a href=''https://cmonkey.co/lualanderprivate''>https://cmonkey.co/lualanderprivate</a>'
-  websiteLatestMessageTimestamp: 1756061091
+  websiteLatestMessageTimestamp: 1756863067
   websiteDynamicMessage:
     text: <u>Fresh Assets on Sale!</u>
     url: https://cmonkey.co/unityassetstore
-  websiteDynamicMessageTimestamp: 1756061091
+  websiteDynamicMessageTimestamp: 1756863067
   websiteLatestVideos:
     videos:
-    - youTubeId: YCvh88Hg5m8
-      title: TOP 8 QUICK Tips on Game Programming!
-    - youTubeId: Lgmv7PYKka8
-      title: Does this AI FINALLY replace Game Devs? Should YOU worry?
-    - youTubeId: x4BTbeKinSI
-      title: TOP 10 FREE NEW Assets AUGUST 2025!
-    - youTubeId: HZ48JOAf-Ko
-      title: Did I STOP making TUTORIALS?
-  websiteLatestVideosTimestamp: 1756061091
+    - youTubeId: 8Ym28WJUYnQ
+      title: The BIGGEST Problem in Game Dev!
+    - youTubeId: C66iDut3jTM
+      title: BEST NEW Visual Assets to INSPIRE YOU!
+    - youTubeId: JZHByNNQb3I
+      title: 8 QUICK Success and Marketing Tips you NEED to know!
+    - youTubeId: FrKLJ1nCsxY
+      title: Indie Dev makes $4 MILLION... then goes broke!
+  websiteLatestVideosTimestamp: 1756863067
   lastChatAIQuestionAsked: SO I am already storing the music time in a static field
     and it does resume from where it left off. The problem is that there is a brief
     second where the music cuts off before resuming. Idk if this is how it is supposed
