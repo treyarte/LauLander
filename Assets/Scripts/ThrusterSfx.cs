@@ -17,7 +17,13 @@ public class ThrusterSfx : MonoBehaviour
         _lander.OnForceUp += Lander_OnForceUp;
         _lander.OnForceLeft += Lander_OnForceLeft;
         _lander.OnForceRight += Lander_OnForceRight;
+        SoundManager.Instance.OnSoundVolumeChanged += SoundManger_OnSoundVolChanged;
         thrusterSfx.Pause();
+    }
+
+    private void SoundManger_OnSoundVolChanged(object sender, EventArgs e)
+    {
+        thrusterSfx.volume = SoundManager.Instance.GetNormalizedSoundVol();
     }
 
     private void PlayThrusterSfx()

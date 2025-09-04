@@ -7,7 +7,15 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip fuelPickupSfx;
     [SerializeField] private AudioClip crashLandingSfx;
     [SerializeField] private AudioClip successLandingSfx;
-    
+    private const int MAX_SOUND_VOL = 10;
+    private static int currentSoundVol = 6; 
+    public static SoundManager Instance {get; private set;}
+    public event EventHandler OnSoundVolumeChanged;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -18,29 +26,51 @@ public class SoundManager : MonoBehaviour
 
     private void Lander_OnLanded(object sender, LandingEventArgs e)
     {
-        if (Camera.main == null) { return;}
-        
         switch (e.Type)
         {
             case LandingType.Success:
-                AudioSource.PlayClipAtPoint(successLandingSfx, Camera.main.transform.position);
+                PlaySound(successLandingSfx);        
                 break;
             default:
-                AudioSource.PlayClipAtPoint(crashLandingSfx, Camera.main.transform.position);
+                PlaySound(crashLandingSfx);
                 break;
         }
     }
 
-    void Lander_OnFuelPickup(object sender, float e)
+    private void Lander_OnFuelPickup(object sender, float e)
     {
-        if (Camera.main == null) {return;}
-        AudioSource.PlayClipAtPoint(fuelPickupSfx, Camera.main.transform.position);
+        PlaySound(fuelPickupSfx);
     }
 
-    void Lander_CoinPickup(object sender, int e)
+    private void Lander_CoinPickup(object sender, int e)
     {
-        if (Camera.main == null) {return;}
-            
-        AudioSource.PlayClipAtPoint(coinPickupSfx, Camera.main.transform.position);
+        PlaySound(coinPickupSfx);
+    }
+
+    private void PlaySound(AudioClip clip, Vector3? position = null)
+    {
+        Vector3 pos = Camera.main != null ?  Camera.main.transform.position : Vector3.zero;
+        
+        if (position != null)
+        {
+            pos = position.Value;
+        }
+        
+        AudioSource.PlayClipAtPoint(clip, pos, GetNormalizedSoundVol());
+    }
+
+    public int GetCurrentSoundVol()
+    {
+        return currentSoundVol;
+    }    
+    
+    public float GetNormalizedSoundVol()
+    {
+        return Mathf.Clamp01((float)currentSoundVol/ MAX_SOUND_VOL);
+    }
+    public void UpdateSoundVolume()
+    {
+        currentSoundVol = (currentSoundVol + 1) % MAX_SOUND_VOL;
+        OnSoundVolumeChanged?.Invoke(this, EventArgs.Empty);
     }
 }
