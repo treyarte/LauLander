@@ -9,6 +9,9 @@ public class CargoArea : MonoBehaviour
 
     public event EventHandler OnCargoAreaEnter;
     public event EventHandler OnCargoAreaExit;
+    public event EventHandler OnCargoDropOff;
+    public event EventHandler OnCargoPickUp;
+    
     public enum InteractType
     {
         Pickup,
@@ -27,9 +30,11 @@ public class CargoArea : MonoBehaviour
                 {
                     case InteractType.Pickup:
                         lander.LoadCargo();
+                        OnCargoPickUp?.Invoke(this, EventArgs.Empty);
                         break;
                     case InteractType.DropOff:
                         lander.DropOffCargo();
+                        OnCargoDropOff?.Invoke(this, EventArgs.Empty);
                         break;
                 }
                 DestroySelf();
