@@ -25,16 +25,17 @@ public enum LanderState
 
 public class Lander : MonoBehaviour
 {
-    private Rigidbody2D landerBody2D;
-    private LanderState landerState = LanderState.WaitingToStart;
-    private const float  LANDER_GRAVITY = 0.7f;
-    private Transform cargoRopeInstance;
     [SerializeField] private Transform cargoRopePrefab;
     [SerializeField] private float forceUp = 700f;
     [SerializeField] private float torqueLeft = +100f;
     [SerializeField] private float torqueRight = -100f;
     [SerializeField] private float maxFuel = 10f;
     [SerializeField] private float fuel;
+    private Rigidbody2D landerBody2D;
+    private LanderState landerState = LanderState.WaitingToStart;
+    private const float  LANDER_GRAVITY = 0.7f;
+    private Transform cargoRopeInstance;
+    private CargoSO cargoSO;
     public static Lander Instance {get; private set;}
     public event EventHandler OnForceUp;
     public event EventHandler OnForceLeft;
@@ -44,8 +45,6 @@ public class Lander : MonoBehaviour
     public event EventHandler<LanderState> OnStateChanged;
     public event EventHandler<int> OnCoinPickup;
     public event EventHandler<float> OnFuelPickup;
-    
-
 
     
     private void Awake()
@@ -232,14 +231,16 @@ public class Lander : MonoBehaviour
         return landerBody2D.linearVelocityY;
     }
 
-    public void LoadCargo()
+    public void LoadCargo(CargoSO cargo)
     { 
         cargoRopeInstance = Instantiate(cargoRopePrefab, transform);
+        cargoSO = cargo;
     }
 
     public void DropOffCargo()
     {
         Destroy(cargoRopeInstance.gameObject);
+        cargoSO = null;
     }
 
     public void CrashLander()
@@ -252,8 +253,11 @@ public class Lander : MonoBehaviour
             LandingSpeed = 0f
         });
     }
-    
-    
+
+    public CargoSO GetCargoSO()
+    {
+        return cargoSO;
+    }
     
     
 }
