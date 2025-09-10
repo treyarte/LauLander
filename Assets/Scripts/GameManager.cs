@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
         Score += args.Score;
         Debug.Log("Total Score" + Score);
     }
+
+    public void UpdateScore(int score)
+    {
+        Score += score;
+    }
     
     public float GetTime() { return Mathf.Round(time); }
 
