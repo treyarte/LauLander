@@ -258,6 +258,10 @@ public class Lander : MonoBehaviour
     {
         return cargoSO;
     }
-    
+
+    public void AddForce(Vector2 force)
+    {
+        landerBody2D.AddForce(force * Time.deltaTime);
+    }    
     
 }
